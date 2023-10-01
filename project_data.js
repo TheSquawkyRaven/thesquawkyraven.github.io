@@ -3,6 +3,7 @@ var project_data = [
     {
         timeline: "2023",
         projects: [
+            // Personal Portfolio Website
             {
                 id: "website-2023",
                 icon: "images/squawky_birb_background_10x.png",
@@ -24,6 +25,7 @@ var project_data = [
                         `You're looking at it. Made with Tailwind CSS."`,
                 }
             },
+            // Billy The Worm Bait
             {
                 icon: "images/billy_the_worm_bait.png",
                 title: "Billy The Worm Bait",
@@ -52,6 +54,7 @@ var project_data = [
                     }
                 }
             },
+            // Location-based Zombie Simulator (FYP)
             {
                 id: "fyp-2023",
                 icon: "images/fyp.png",
@@ -78,6 +81,7 @@ var project_data = [
                     }
                 }
             },
+            // Package Swipe
             {
                 id: "package-swipe-2023",
                 icon: "images/package_swipe.png",
@@ -109,6 +113,7 @@ var project_data = [
     {
         timeline: "2022",
         projects: [
+            // Oops, I Lost my Sword in the Dungeon
             {
                 id: "oops-i-lost-my-sword-2022",
                 icon: "images/oops_i_lost_my_sword.png",
@@ -141,6 +146,7 @@ var project_data = [
                     }
                 },
             },
+            // Operation Quackn't
             {
                 id: "operation-quacknt-2022",
                 icon: "images/operation_quacknt.png",
@@ -179,6 +185,7 @@ var project_data = [
     {
         timeline: "2021",
         projects: [
+            // TTS Squawk
             {
                 id: "tts-squawk-2021",
                 icon: "images/tts_squawk.png",
@@ -205,6 +212,7 @@ var project_data = [
                     }
                 },
             },
+            // Squawker
             {
                 id: "squawker-2021",
                 icon: "images/squawker.png",
@@ -239,6 +247,7 @@ var project_data = [
     {
         timeline: "2020",
         projects: [
+            // Winds of the Past
             {
                 id: "winds-of-the-past-2020",
                 icon: "images/winds_of_the_past.png",
@@ -267,6 +276,7 @@ var project_data = [
                     }
                 },
             },
+            // Spooky Babysitter
             {
                 id: "spooky-babysitter-2020",
                 icon: "images/spooky_babysitter.png",
