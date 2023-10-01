@@ -37,6 +37,8 @@
     }
 }
 
+/* I'm too lazy to calculate aspect ratio to scale so this is what I came up with. Change in the future? */
+
 @media (min-aspect-ratio: 0) {
     .background {
         --scale-y: 1;
