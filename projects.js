@@ -70,7 +70,6 @@ function createProject(parentNode, project) {
         })
     }
 
-    let collapsibleContentInserted = false
     let collapsibleNode = projectNode.querySelector(".collapsible")
     let loadProjectContentFunction = () => {
         // Project Content

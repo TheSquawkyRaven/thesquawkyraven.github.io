@@ -76,113 +76,28 @@
     }
 }
 
-
-
-/* I'm too lazy to calculate aspect ratio to scale so this is what I came up with. Change in the future? */
-
-@media (min-aspect-ratio: 0) {
-    .background {
-        --scale-y: 1;
-        --scale-x: 10;
-    }
-}
-
-@media (min-aspect-ratio: 0.1) {
-    .background {
-        --scale-y: 1;
-        --scale-x: 5;
-    }
-}
-
-@media (min-aspect-ratio: 0.2) {
-    .background {
-        --scale-y: 1;
-        --scale-x: 4;
-    }
-}
-
-@media (min-aspect-ratio: 0.3) {
-    .background {
-        --scale-y: 1;
-        --scale-x: 3;
-    }
-}
-
-@media (min-aspect-ratio: 0.4) {
-    .background {
-        --scale-y: 2;
-        --scale-x: 3;
-    }
-}
-
-@media (min-aspect-ratio: 0.6) {
-    .background {
-        --scale-y: 2;
-        --scale-x: 2;
-    }
-}
-
-@media(min-aspect-ratio: 1) {
-    .background {
-        --scale-y: 3;
-        --scale-x: 2;
-    }
-}
-
-@media(min-aspect-ratio: 2) {
-    .background {
-        --scale-y: 3;
-        --scale-x: 2;
-    }
-}
-
-@media(min-aspect-ratio: 3) {
-    .background {
-        --scale-y: 4;
-        --scale-x: 2;
-    }
-}
-
-@media(min-aspect-ratio: 4) {
-    .background {
-        --scale-y: 5;
-        --scale-x: 2;
-    }
-}
-
-@media(min-aspect-ratio: 5) {
-    .background {
-        --scale-y: 7;
-        --scale-x: 2;
-    }
-}
-
-@media(min-aspect-ratio: 7) {
-    .background {
-        --scale-y: 9;
-        --scale-x: 2;
-    }
-}
-
-
 .background {
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
-    background-image: url('images/background.jpg');
-    background-size: contain;
-    transform-origin: center;
     animation: background-spin 1000s linear infinite;
     z-index: -1;
+
+    --scale-x: 1;
+    --scale-y: 1;
 }
 
 @keyframes background-spin {
-    from {
+    0% {
         transform: rotate(0deg) scaleX(var(--scale-x)) scaleY(var(--scale-y));
     }
 
-    to {
+    50% {
+        transform: rotate(180deg) scaleX(calc(var(--scale-x) * 2)) scaleY(calc(var(--scale-y ) * 2));
+    }
+
+    100% {
         transform: rotate(360deg) scaleX(var(--scale-x)) scaleY(var(--scale-y));
     }
 }
