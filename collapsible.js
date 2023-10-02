@@ -41,9 +41,13 @@ function toggleCollapsible(collapsible, doCollapse) {
     let targetNodes = col[target].targetNodes
     targetNodes.forEach((targetNode) => {
         if (doCollapse) {
-            targetNode.classList.add("hidden")
+            targetNode.classList.add("collapse-anim")
+            targetNode.classList.remove("expand-anim")
+            //targetNode.classList.add("hidden")
         }
         else{
+            targetNode.classList.add("expand-anim")
+            targetNode.classList.remove("collapse-anim")
             targetNode.classList.remove("hidden")
         }
     })

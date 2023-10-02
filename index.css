@@ -19,11 +19,11 @@
 
 .background-container {
     background-image: linear-gradient(to bottom right, rgb(46 16 101 / .80), rgb(30 27 75 / .80), rgb(59 7 100 / .80), rgb(30 27 75 / .80), rgb(46 16 101 / .80), rgb(30 27 75 / .80), rgb(59 7 100 / .80));
-    animation: fade 15s ease-in-out infinite;
+    animation: bg-scroll 15s ease-in-out infinite;
     background-size: 400% 400%;
 }
 
-@keyframes fade {
+@keyframes bg-scroll {
     0% {
         background-position: 10% 0%;
     }
@@ -36,6 +36,47 @@
         background-position: 10% 0%;
     }
 }
+
+
+.expand-anim {
+    animation: expand-content 0.5s ease forwards;
+    transform-origin: top;
+}
+.collapse-anim {
+    animation: collapse-content 0.5s ease forwards;
+    transform-origin: top;
+}
+
+
+@keyframes expand-content {
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+        display: block;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+        display: block;
+    }
+}
+
+@keyframes collapse-content {
+    from {
+        opacity: 1;
+        transform: translateY(0%);
+        display: block;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-20%);
+        display: none;
+    }
+}
+
+
 
 /* I'm too lazy to calculate aspect ratio to scale so this is what I came up with. Change in the future? */
 
