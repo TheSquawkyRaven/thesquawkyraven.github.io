@@ -70,11 +70,17 @@ function createProject(parentNode, project) {
         })
     }
 
-    // Project Content
-    let content = project.content
-    if (content) {
-        createProjectContent(projectContentNode, content)
+    let collapsibleContentInserted = false
+    let collapsibleNode = projectNode.querySelector(".collapsible")
+    let loadProjectContentFunction = () => {
+        // Project Content
+        let content = project.content
+        if (content) {
+            createProjectContent(projectContentNode, content)
+        }
+        collapsibleNode.removeEventListener('click', loadProjectContentFunction)
     }
+    collapsibleNode.addEventListener('click', loadProjectContentFunction)
 
     parentNode.appendChild(projectNode)
 }
