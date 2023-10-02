@@ -97,7 +97,7 @@ var project_data = [
                     text:
                         `Made in Unity for smart phones.
                         This game is a casual mobile game. The main objective is to swipe packages that appear indefinitely from conveyor belts to the color and shape coded receivers. The game speeds up and slows down based on any mistakes that the player do.
-                        I got the second place on a local game development competition.<u><a href="https://www.pocketnews.com.my/2023/02/28/create-your-own-game-grand-finale-has-been-successfully-held/" target="_blank">Article on Pocket News</a></u>
+                        I got the second place on a local game development competition. <u><a href="https://www.pocketnews.com.my/2023/02/28/create-your-own-game-grand-finale-has-been-successfully-held/" target="_blank">Article on Pocket News</a></u>
                         Only video demos are available.`,
                     links: {
                         youtube: [
