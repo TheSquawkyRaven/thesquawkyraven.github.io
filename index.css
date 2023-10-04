@@ -20,20 +20,21 @@
 .background-container {
     background-image: linear-gradient(to bottom right, rgb(46 16 101 / .80), rgb(30 27 75 / .80), rgb(59 7 100 / .80), rgb(30 27 75 / .80), rgb(46 16 101 / .80), rgb(30 27 75 / .80), rgb(59 7 100 / .80));
     animation: bg-scroll 15s ease-in-out infinite;
-    background-size: 400% 400%;
+    transform-origin: 0% 0%;
+    z-index : -1;
 }
 
 @keyframes bg-scroll {
     0% {
-        background-position: 10% 0%;
+        transform: scale(4, 4) translate(0%, 0%);
     }
 
     50% {
-        background-position: 91% 100%;
+        transform: scale(4, 4) translate(-75%, -75%);
     }
 
     100% {
-        background-position: 10% 0%;
+        transform: scale(4, 4) translate(0%, 0%);
     }
 }
 
