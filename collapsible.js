@@ -43,9 +43,11 @@ function toggleCollapsible(collapsible, doCollapse) {
         if (doCollapse) {
             targetNode.classList.add("collapse-anim")
             targetNode.classList.remove("expand-anim")
-            //targetNode.classList.add("hidden")
+            setTimeout(() => {
+                targetNode.classList.add("hidden")
+            }, 0.5);
         }
-        else{
+        else {
             targetNode.classList.add("expand-anim")
             targetNode.classList.remove("collapse-anim")
             targetNode.classList.remove("hidden")
