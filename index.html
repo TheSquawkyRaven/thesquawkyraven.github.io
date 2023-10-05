@@ -7,7 +7,7 @@
 
     <title>Raven Lim</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    
+
     <link rel="stylesheet" href="tailwind-output.css">
     <link rel="stylesheet" href="index.css">
 </head>
@@ -47,8 +47,7 @@
 
     <div class="">
 
-        <div
-            class="relative overflow-hidden inset-x-0
+        <div class="relative overflow-hidden inset-x-0
             mx-4 mb-4 sm:mx-8 sm:mb-8 md:mx-16 md:mb-16 lg:mx-32 lg:mb-32 xl:mx-64 xl:mb-64
             p-4 sm:p-6 md:p-8 lg:p-12
             rounded-lg border-1 border-violet-900 rounded shadow-md shadow-violet-950/50">
@@ -62,39 +61,73 @@
                     <div>
                         <a class="flex gap-x-1 items-center p-2 rounded-full border-2 border-indigo-100 bg-gradient-to-b from-indigo-900 to-violet-900 drop-shadow-xl"
                             href="https://thesquawkyraven.itch.io" target="_blank">
-                            <p class="text-sm sm:text-md md:text-normal">
+                            <p class="text-sm sm:text-base">
                                 Itch.io
                             </p>
-                            <img class="w-4 sm:w-5 md:w-6" src="images/itch.io.png">
+                            <img class="w-4 sm:w-5 md:w-6" src="images/logos/itch.io.png">
                         </a>
                     </div>
                     <!-- <div>
                         <a class="flex gap-x-1 items-center p-2 rounded-full border-2 border-indigo-100 bg-gradient-to-b from-indigo-900 to-violet-900 drop-shadow-xl"
                             href="https://youtube.com/@TheSquawkyRaven?si=o5J37TEKWXSLUOHn" target="_blank">
-                            <p class="text-sm sm:text-md md:text-normal">
+                            <p class="text-sm sm:text-base">
                                 Youtube
                             </p>
-                            <img class="w-4 sm:w-5 md:w-6" src="images/youtube.png">
+                            <img class="w-4 sm:w-5 md:w-6" src="images/logos/youtube.png">
                         </a>
                     </div> -->
                     <div>
                         <a class="flex gap-x-1 items-center p-2 rounded-full border-2 border-indigo-100 bg-gradient-to-b from-indigo-900 to-violet-900 drop-shadow-xl"
                             href="https://github.com/TheSquawkyRaven" target="_blank">
-                            <p class="text-sm sm:text-md md:text-normal">
+                            <p class="text-sm sm:text-base">
                                 Github
                             </p>
-                            <img class="w-4 sm:w-5 md:w-6" src="images/github.png">
+                            <img class="w-4 sm:w-5 md:w-6" src="images/logos/github.png">
                         </a>
                     </div>
                 </div>
 
                 <div>
                     <!-- Projects -->
-                    <h3 id="section-work" class="mb-2 text-2xl font-semibold">
-                        Projects
-                    </h3>
+                    <div class="flex gap-x-2 items-center mb-2">
 
-                    <ol id="projects-container" class="relative border-l border-indigo-800 z-0">
+                        <p id="filter-project-text" class="text-2xl text-indigo-200 font-medium">
+                        </p>
+
+                        <h3 class="text-2xl font-semibold">
+                            Projects
+                        </h3>
+                    </div>
+
+                    <!-- Project Filters -->
+                    <div class="mb-4">
+                        <div class="my-1">
+                            <div id="filter-container" class="my-1 flex flex-wrap gap-2 items-center">
+                                <!-- Filter Template -->
+                                <div id="filter-template" class="hidden">
+                                    <button
+                                        class="filter flex items-center p-2 rounded-full border-2 border-indigo-100 bg-indigo-900 drop-shadow-xl">
+                                        <img class="filter-icon w-4 sm:w-5 md:w-6">
+                                        <p class="filter-text text-sm sm:text-base">
+                                        </p>
+                                    </button>
+                                </div>
+
+                                <button id="filter-clear"
+                                    class="hidden filter flex items-center p-2 rounded-full border-2 border-indigo-100 bg-indigo-900 drop-shadow-xl">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" class="filter-icon w-4 sm:w-5 md:w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                    <p class="filter-text text-sm sm:text-base">
+                                        Clear
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol id="project-container" class="relative border-l border-indigo-800 z-0">
 
                         <!-- Templates -->
                         <div class="hidden">
@@ -106,7 +139,6 @@
                                         class="absolute w-3 h-3 bg-indigo-400 rounded-full mt-1.5 -left-1.5 border border-gray-900">
                                     </div>
                                     <p class="timeline-text pt-0.5 mb-1 text-sm font-normal text-indigo-400">
-                                        2023
                                     </p>
                                 </li>
                             </div>
@@ -217,6 +249,10 @@
     <script src="projects.js"></script>
 
     <script src="collapsible.js"></script>
+
+    <script src="filter_data.js"></script>
+    <script src="filter.js"></script>
+
     <script src="background.js"></script>
 
 </body>

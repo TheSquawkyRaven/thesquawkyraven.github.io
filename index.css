@@ -38,6 +38,19 @@
     }
 }
 
+.filter-text {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: min-content;
+    transition: width 0.5s, margin-left 0.5s;
+    margin-left: 0;
+}
+
+.filter:hover > .filter-text {
+    width: 100px;
+    margin-left: 0.5rem;
+}
 
 .expand-anim {
     animation: expand-content 0.5s ease forwards;

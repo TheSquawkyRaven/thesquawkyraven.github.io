@@ -1,4 +1,4 @@
-var project_data = [
+const project_data = [
     // 2023
     {
         timeline: "2023",
@@ -8,10 +8,11 @@ var project_data = [
                 id: "website-2023",
                 icon: "images/squawky_birb_background_10x.png",
                 title: "TheSquawkyRaven Website",
-                subtitle: "Personal Portfolio Website",
+                subtitle: "Personal Portfolio",
+                tags: ["TailwindCSS", "HTML", "JS", "CSS"],
                 links: [
                     {
-                        icon: "images/github.png",
+                        icon: "images/logos/github.png",
                         href: "https://github.com/TheSquawkyRaven/thesquawkyraven.github.io"
                     },
                     {
@@ -30,13 +31,14 @@ var project_data = [
                 icon: "images/billy_the_worm_bait.png",
                 title: "Billy The Worm Bait",
                 subtitle: "\"Fishing\" Game",
+                tags: ["Unity", "CS"],
                 links: [
                     {
-                        icon: "images/itch.io.png",
+                        icon: "images/logos/itch.io.png",
                         href: "https://thesquawkyraven.itch.io/billy-the-worm-bait"
                     },
                     {
-                        icon: "images/youtube.png",
+                        icon: "images/logos/youtube.png",
                         href: "https://www.youtube.com/watch?v=Se-C33CvcLk"
                     }
                 ],
@@ -60,13 +62,14 @@ var project_data = [
                 icon: "images/fyp.png",
                 title: "Location-based Zombie Simulator (FYP)",
                 subtitle: "Braaaiinnzzz",
+                tags: ["Unity", "CS"],
                 links: [
                     {
-                        icon: "images/youtube.png",
+                        icon: "images/logos/youtube.png",
                         href: "https://www.youtube.com/watch?v=aq_LUUEkpDY"
                     },
                     {
-                        icon: "images/github.png",
+                        icon: "images/logos/github.png",
                         href: "https://github.com/TheSquawkyRaven/MMU_FYP-LocationSurvivalRPG-Unity"
                     }
                 ],
@@ -87,15 +90,16 @@ var project_data = [
                 icon: "images/package_swipe.png",
                 title: "Package Swipe",
                 subtitle: "Colors",
+                tags: ["Unity", "CS"],
                 links: [
                     {
-                        icon: "images/youtube.png",
+                        icon: "images/logos/youtube.png",
                         href: "https://www.youtube.com/watch?v=186qSE7HL0g"
                     }
                 ],
                 content: {
                     text:
-                        `Made in Unity for smart phones.
+                        `Made in Unity for smart phones. An expanded project initially made as a game productions project assignment in MMU.
                         This game is a casual mobile game. The main objective is to swipe packages that appear indefinitely from conveyor belts to the color and shape coded receivers. The game speeds up and slows down based on any mistakes that the player do.
                         I got the second place on a local game development competition. <u><a href="https://www.pocketnews.com.my/2023/02/28/create-your-own-game-grand-finale-has-been-successfully-held/" target="_blank">Article on Pocket News</a></u>
                         Only video demos are available.`,
@@ -103,6 +107,122 @@ var project_data = [
                         youtube: [
                             "https://www.youtube-nocookie.com/embed/CA1r__BYa3M?si=rE9nRaaa03IHP6gg",
                             "https://www.youtube-nocookie.com/embed/186qSE7HL0g?si=f0W4Gc4m6NSQDFce"
+                        ]
+                    }
+                }
+            },
+            // Submaruins
+            {
+                id: "submaruins-2023",
+                icon: "images/submaruins.png",
+                title: "Submaruins",
+                subtitle: "Sonar",
+                tags: ["Unity", "CS"],
+                links: [
+                    {
+                        icon: "images/logos/youtube.png",
+                        href: "https://www.youtube.com/watch?v=vvwzAjJVgtY"
+                    },
+                    {
+                        icon: "images/logos/github.png",
+                        href: "https://github.com/TheSquawkyRaven/MMU_Submaruins-Unity"
+                    }
+                ],
+                content: {
+                    text:
+                        `Made with Unity, as a 3D game programming project assignment in MMU.
+                        This is a third person game casual game about cleaning up an ocean.
+                        Only video demo is available.`,
+                    links: {
+                        youtube: [
+                            "https://www.youtube-nocookie.com/embed/vvwzAjJVgtY?si=36BfbPTuinwiz63V"
+                        ]
+                    }
+                }
+            },
+            // Lightning Runners
+            {
+                id: "lightning-runners-2023",
+                icon: "images/lightning_runners.png",
+                title: "Lightning Runners",
+                subtitle: "Pew pew",
+                tags: [/*"UnrealEngine4", */"UnrealEngine"],
+                links: [
+                    {
+                        icon: "images/logos/youtube.png",
+                        href: "https://www.youtube.com/watch?v=3h8Ij54HKXg"
+                    },
+                    {
+                        icon: "images/logos/github.png",
+                        href: "https://github.com/TheSquawkyRaven/MMU_LightningRunners_UnrealEngine4"
+                    }
+                ],
+                content: {
+                    text:
+                        `Made with Unreal Engine 4, as a game physics project assignment in MMU.
+                        This is a FPS with wall running, wall jumping, and slow-mo features.
+                        Only video demo is available.`,
+                    links: {
+                        youtube: [
+                            "https://www.youtube-nocookie.com/embed/3h8Ij54HKXg?si=EcV9ibjwPPhfNSv3"
+                        ]
+                    }
+                }
+            },
+            // Hungry Pawz
+            {
+                id: "hungry-pawz-2023",
+                icon: "images/hungry_pawz.png",
+                title: "Hungry Pawz",
+                subtitle: "Meow",
+                tags: ["Phaser", "HTML", "JS"],
+                links: [
+                    {
+                        icon: "images/logos/youtube.png",
+                        href: "https://www.youtube.com/watch?v=z-OJuVfIRps"
+                    },
+                    {
+                        icon: "images/logos/github.png",
+                        href: "https://github.com/TheSquawkyRaven/MMU_HungryPawz-Phaser"
+                    }
+                ],
+                content: {
+                    text:
+                        `Made with PhaserJS, as a game physics project assignment in MMU.
+                        This is a 2D platformer, with multiple endings.
+                        Only video demo is available.`,
+                    links: {
+                        youtube: [
+                            "https://www.youtube-nocookie.com/embed/z-OJuVfIRps?si=OjdgpSGfWMSox_a7"
+                        ]
+                    }
+                }
+            },
+            // Zombie SurvivorZ
+            {
+                id: "zombie-survivorz-2023",
+                icon: "images/zombie_survivorz.png",
+                title: "Zombie SurvivorZ",
+                subtitle: "Zombie Shooter",
+                tags: ["MonoGame", "CS"],
+                links: [
+                    {
+                        icon: "images/logos/youtube.png",
+                        href: "https://www.youtube.com/watch?v=fbaGoi2UOK8"
+                    },
+                    {
+                        icon: "images/logos/github.png",
+                        href: "https://github.com/TheSquawkyRaven/MMU_ZombieSurvivorZ-MonoGame"
+                    }
+                ],
+                content: {
+                    text:
+                        `Made with a friend using MonoGame, as a game algorithms project assignment in MMU.
+                        This is a 2D top down zombie shooter games, inspired by classical top down shooters released in the 2000s.
+                        Only video demo is available.`,
+                    links: {
+                        youtube: [
+                            "https://www.youtube-nocookie.com/embed/fbaGoi2UOK8?si=Yc6KABXiBsD42FXy"
                         ]
                     }
                 }
@@ -119,17 +239,18 @@ var project_data = [
                 icon: "images/oops_i_lost_my_sword.png",
                 title: "Oops, I Lost my Sword in the Dungeon",
                 subtitle: "Traps n Monsters",
+                tags: ["GDevelop"],
                 links: [
                     {
-                        icon: "images/itch.io.png",
+                        icon: "images/logos/itch.io.png",
                         href: "https://thesquawkyraven.itch.io/oops-i-lost-my-sword-in-the-dungeon"
                     },
                     {
-                        icon: "images/youtube.png",
+                        icon: "images/logos/youtube.png",
                         href: "https://www.youtube.com/watch?v=EPDNOFAexq0"
                     },
                     {
-                        icon: "images/github.png",
+                        icon: "images/logos/github.png",
                         href: "https://github.com/TheSquawkyRaven/MMU_OopsILostMySwordInTheDungeon-GDevelop"
                     }
                 ],
@@ -152,17 +273,18 @@ var project_data = [
                 icon: "images/operation_quacknt.png",
                 title: "Operation Quackn't",
                 subtitle: "Duck Shooter (but they shoot back)",
+                tags: ["GDevelop"],
                 links: [
                     {
-                        icon: "images/itch.io.png",
+                        icon: "images/logos/itch.io.png",
                         href: "https://thesquawkyraven.itch.io/operation-quacknt"
                     },
                     {
-                        icon: "images/youtube.png",
+                        icon: "images/logos/youtube.png",
                         href: "https://www.youtube.com/watch?v=gAyzPUpFp9Q"
                     },
                     {
-                        icon: "images/github.png",
+                        icon: "images/logos/github.png",
                         href: "https://github.com/TheSquawkyRaven/MMU_OperationQuacknt-GDevelop"
                     }
                 ],
@@ -191,13 +313,14 @@ var project_data = [
                 icon: "images/tts_squawk.png",
                 title: "TTS Squawk",
                 subtitle: "Squawk squawk",
+                tags: ["CS", "HTML", "JS", "CSS"],
                 links: [
                     {
-                        icon: "images/youtube.png",
+                        icon: "images/logos/youtube.png",
                         href: "https://www.youtube.com/watch?v=dMTg3XHAHH0"
                     },
                     {
-                        icon: "images/github.png",
+                        icon: "images/logos/github.png",
                         href: "https://github.com/TheSquawkyRaven/TTSSquawk-Web-JS-CS"
                     }
                 ],
@@ -218,13 +341,14 @@ var project_data = [
                 icon: "images/squawker.png",
                 title: "Squawker",
                 subtitle: "Squawk",
+                tags: ["Unity", "CS", "HTML", "JS", "CSS"],
                 links: [
                     {
-                        icon: "images/youtube.png",
+                        icon: "images/logos/youtube.png",
                         href: "https://www.youtube.com/watch?v=_Gp9jB1_URU"
                     },
                     {
-                        icon: "images/github.png",
+                        icon: "images/logos/github.png",
                         href: "https://github.com/TheSquawkyRaven/Squawker-Web-JS-Unity"
                     }
                 ],
@@ -232,6 +356,7 @@ var project_data = [
                     text:
                         `Made using HTML, JavaScript and Unity Engine.
                         This is a Google Meet extension that reads the chat, and a Unity program that interfaces between them.
+                        Initially, I didn't know you can create a Websocket server within Unity C# itself, thus I used NodeJS to handle connections that writes to files. After realizing it, I made the connection simpler and more stable.
                         It's inspired by Twitch streams where in some cases viewers can type commands in the chat to change things in the stream. This program does it similarly, and can be used to show text in a different way, and for fun.
                         A lecturer, during online classes, used it in their classes and mainly use it to notify them about new chat messages, since Google Meet chats are easy to miss. Other features like using the timer, randomization etc were also requested and implemented in consequent builds.
                         This serves as a foundation and inspiration to TTS Squawk.
@@ -253,13 +378,14 @@ var project_data = [
                 icon: "images/winds_of_the_past.png",
                 title: "Winds of the Past",
                 subtitle: "Tick Tock Tack",
+                tags: ["Unity", "CS"],
                 links: [
                     {
-                        icon: "images/itch.io.png",
+                        icon: "images/logos/itch.io.png",
                         href: "https://thesquawkyraven.itch.io/winds-of-the-past"
                     },
                     {
-                        icon: "images/youtube.png",
+                        icon: "images/logos/youtube.png",
                         href: "https://www.youtube.com/watch?v=glmBgMb-dkc"
                     }
                 ],
@@ -282,13 +408,14 @@ var project_data = [
                 icon: "images/spooky_babysitter.png",
                 title: "Spooky Babysitter",
                 subtitle: "Suicidal Babies",
+                tags: ["Unity", "CS"],
                 links: [
                     {
-                        icon: "images/itch.io.png",
+                        icon: "images/logos/itch.io.png",
                         href: "https://thesquawkyraven.itch.io/the-babysitter"
                     },
                     {
-                        icon: "images/youtube.png",
+                        icon: "images/logos/youtube.png",
                         href: "https://www.youtube.com/watch?v=de7r7Y-F7O8"
                     }
                 ],

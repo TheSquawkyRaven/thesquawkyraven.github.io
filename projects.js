@@ -1,5 +1,5 @@
 
-const projectContainer = document.querySelector("#projects-container")
+const projectContainer = document.querySelector("#project-container")
 
 const projectTimelineTemplate = document.querySelector("#project-timeline-template > .project-timeline")
 const projectLinkTemplate = document.querySelector("#project-link-template > .project-link")
@@ -8,6 +8,8 @@ const projectContentTextTemplate = document.querySelector("#project-content-text
 const projectContentLinksTemplate = document.querySelector("#project-content-links-template > .project-content-links")
 const projectContentYoutubeTemplate = document.querySelector("#project-content-youtube-template > .project-content-youtube")
 const projectTemplate = document.querySelector("#project-template > .project")
+
+var project_map = {}
 
 function createProjects() {
     let currentTimeline
@@ -26,7 +28,12 @@ function createProjects() {
         // Project Listing
         let projects = projectData.projects
         projects.forEach((project) => {
-            createProject(projectTimeline, project)
+            let id = project.id
+            let projectNode = createProject(projectTimeline, project)
+            project_map[id] = {
+                project: project,
+                node: projectNode
+            }
         })
 
     })
@@ -82,6 +89,7 @@ function createProject(parentNode, project) {
     collapsibleNode.addEventListener('click', loadProjectContentFunction)
 
     parentNode.appendChild(projectNode)
+    return projectNode
 }
 
 // Project subtitle links
@@ -109,9 +117,9 @@ function createProjectRedirectLink(parentNode, link) {
     let href = link.href
     redirectNode.href = href
 
-    let options = link.options;
+    let options = link.options
     if (options.includes("rotate")) {
-        let rotateNode = redirectNode.querySelector(".redirect-rotate");
+        let rotateNode = redirectNode.querySelector(".redirect-rotate")
         rotateNode.classList.add("rotate-180")
     }
 
@@ -173,7 +181,7 @@ function createProjectContentLinks(parentNode, links) {
 // Itch.io embed
 function createProjectContentLinkItch(parentNode, itch) {
     let iframe = itch.iframe
-    let wrapperNode = document.createElement('div');
+    let wrapperNode = document.createElement('div')
     wrapperNode.innerHTML = iframe
     let itchNode = wrapperNode.firstChild
     
