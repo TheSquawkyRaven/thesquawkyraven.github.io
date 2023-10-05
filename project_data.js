@@ -10,17 +10,12 @@ const project_data = [
                 title: "TheSquawkyRaven Website",
                 subtitle: "Personal Portfolio",
                 tags: ["TailwindCSS", "HTML", "JS", "CSS"],
-                links: [
-                    {
-                        icon: "images/logos/github.png",
-                        href: "https://github.com/TheSquawkyRaven/thesquawkyraven.github.io"
-                    },
-                    {
-                        icon: "redirect",
-                        href: "#",
-                        options: "rotate",
-                    },
-                ],
+                links: {
+                    github: "https://github.com/TheSquawkyRaven/thesquawkyraven.github.io",
+                    redirect: {
+                        options: "rotate"
+                    }
+                },
                 content: {
                     text:
                         `You're looking at it. Made with Tailwind CSS."`,
@@ -32,16 +27,10 @@ const project_data = [
                 title: "Billy The Worm Bait",
                 subtitle: "\"Fishing\" Game",
                 tags: ["Unity", "CS"],
-                links: [
-                    {
-                        icon: "images/logos/itch.io.png",
-                        href: "https://thesquawkyraven.itch.io/billy-the-worm-bait"
-                    },
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=Se-C33CvcLk"
-                    }
-                ],
+                links: {
+                    itch: "https://thesquawkyraven.itch.io/billy-the-worm-bait",
+                    youtube: "https://www.youtube.com/watch?v=Se-C33CvcLk",
+                },
                 content: {
                     text:
                         `Made in 48 hours for the GMTK Game Jam 2023, using Unity Engine.
@@ -63,16 +52,10 @@ const project_data = [
                 title: "Location-based Zombie Simulator (FYP)",
                 subtitle: "Braaaiinnzzz",
                 tags: ["Unity", "CS"],
-                links: [
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=aq_LUUEkpDY"
-                    },
-                    {
-                        icon: "images/logos/github.png",
-                        href: "https://github.com/TheSquawkyRaven/MMU_FYP-LocationSurvivalRPG-Unity"
-                    }
-                ],
+                links: {
+                    youtube: "https://www.youtube.com/watch?v=aq_LUUEkpDY",
+                    github: "https://github.com/TheSquawkyRaven/MMU_FYP-LocationSurvivalRPG-Unity"
+                },
                 content: {
                     text:
                         `Made throughout the year as a final year project for MMU, using Unity Engine, Mapbox and Google Maps Places API.
@@ -91,12 +74,9 @@ const project_data = [
                 title: "Package Swipe",
                 subtitle: "Colors",
                 tags: ["Unity", "CS"],
-                links: [
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=186qSE7HL0g"
-                    }
-                ],
+                links: {
+                    youtube: "https://www.youtube.com/watch?v=186qSE7HL0g"
+                },
                 content: {
                     text:
                         `Made in Unity for smart phones. An expanded project initially made as a game productions project assignment in MMU.
@@ -118,16 +98,10 @@ const project_data = [
                 title: "Submaruins",
                 subtitle: "Sonar",
                 tags: ["Unity", "CS"],
-                links: [
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=vvwzAjJVgtY"
-                    },
-                    {
-                        icon: "images/logos/github.png",
-                        href: "https://github.com/TheSquawkyRaven/MMU_Submaruins-Unity"
-                    }
-                ],
+                links: {
+                    youtube: "https://www.youtube.com/watch?v=vvwzAjJVgtY",
+                    github: "https://github.com/TheSquawkyRaven/MMU_Submaruins-Unity"
+                },
                 content: {
                     text:
                         `Made with Unity, as a 3D game programming project assignment in MMU.
@@ -147,16 +121,10 @@ const project_data = [
                 title: "Lightning Runners",
                 subtitle: "Pew pew",
                 tags: [/*"UnrealEngine4", */"UnrealEngine"],
-                links: [
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=3h8Ij54HKXg"
-                    },
-                    {
-                        icon: "images/logos/github.png",
-                        href: "https://github.com/TheSquawkyRaven/MMU_LightningRunners_UnrealEngine4"
-                    }
-                ],
+                links: {
+                    youtube: "https://www.youtube.com/watch?v=3h8Ij54HKXg",
+                    github: "https://github.com/TheSquawkyRaven/MMU_LightningRunners_UnrealEngine4"
+                },
                 content: {
                     text:
                         `Made with Unreal Engine 4, as a game physics project assignment in MMU.
@@ -176,16 +144,10 @@ const project_data = [
                 title: "Hungry Pawz",
                 subtitle: "Meow",
                 tags: ["Phaser", "HTML", "JS"],
-                links: [
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=z-OJuVfIRps"
-                    },
-                    {
-                        icon: "images/logos/github.png",
-                        href: "https://github.com/TheSquawkyRaven/MMU_HungryPawz-Phaser"
-                    }
-                ],
+                links: {
+                    youtube: "https://www.youtube.com/watch?v=z-OJuVfIRps",
+                    github: "https://github.com/TheSquawkyRaven/MMU_HungryPawz-Phaser"
+                },
                 content: {
                     text:
                         `Made with PhaserJS, as a game physics project assignment in MMU.
@@ -205,16 +167,10 @@ const project_data = [
                 title: "Zombie SurvivorZ",
                 subtitle: "Zombie Shooter",
                 tags: ["MonoGame", "CS"],
-                links: [
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=fbaGoi2UOK8"
-                    },
-                    {
-                        icon: "images/logos/github.png",
-                        href: "https://github.com/TheSquawkyRaven/MMU_ZombieSurvivorZ-MonoGame"
-                    }
-                ],
+                links: {
+                    youtube: "https://www.youtube.com/watch?v=fbaGoi2UOK8",
+                    github: "https://github.com/TheSquawkyRaven/MMU_ZombieSurvivorZ-MonoGame"
+                },
                 content: {
                     text:
                         `Made with a friend using MonoGame, as a game algorithms project assignment in MMU.
@@ -240,20 +196,11 @@ const project_data = [
                 title: "Oops, I Lost my Sword in the Dungeon",
                 subtitle: "Traps n Monsters",
                 tags: ["GDevelop"],
-                links: [
-                    {
-                        icon: "images/logos/itch.io.png",
-                        href: "https://thesquawkyraven.itch.io/oops-i-lost-my-sword-in-the-dungeon"
-                    },
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=EPDNOFAexq0"
-                    },
-                    {
-                        icon: "images/logos/github.png",
-                        href: "https://github.com/TheSquawkyRaven/MMU_OopsILostMySwordInTheDungeon-GDevelop"
-                    }
-                ],
+                links: {
+                    itch: "https://thesquawkyraven.itch.io/oops-i-lost-my-sword-in-the-dungeon",
+                    youtube: "https://www.youtube.com/watch?v=EPDNOFAexq0",
+                    github: "https://github.com/TheSquawkyRaven/MMU_OopsILostMySwordInTheDungeon-GDevelop"
+                },
                 content: {
                     text:
                         `Made with a friend in MMU with GDevelop."
@@ -274,20 +221,11 @@ const project_data = [
                 title: "Operation Quackn't",
                 subtitle: "Duck Shooter (but they shoot back)",
                 tags: ["GDevelop"],
-                links: [
-                    {
-                        icon: "images/logos/itch.io.png",
-                        href: "https://thesquawkyraven.itch.io/operation-quacknt"
-                    },
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=gAyzPUpFp9Q"
-                    },
-                    {
-                        icon: "images/logos/github.png",
-                        href: "https://github.com/TheSquawkyRaven/MMU_OperationQuacknt-GDevelop"
-                    }
-                ],
+                links: {
+                    itch: "https://thesquawkyraven.itch.io/operation-quacknt",
+                    youtube: "https://www.youtube.com/watch?v=gAyzPUpFp9Q",
+                    github: "https://github.com/TheSquawkyRaven/MMU_OperationQuacknt-GDevelop"
+                },
                 content: {
                     text:
                         `Made with GDevelop.
@@ -314,16 +252,10 @@ const project_data = [
                 title: "TTS Squawk",
                 subtitle: "Squawk squawk",
                 tags: ["CS", "HTML", "JS", "CSS"],
-                links: [
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=dMTg3XHAHH0"
-                    },
-                    {
-                        icon: "images/logos/github.png",
-                        href: "https://github.com/TheSquawkyRaven/TTSSquawk-Web-JS-CS"
-                    }
-                ],
+                links: {
+                    youtube: "https://www.youtube.com/watch?v=dMTg3XHAHH0",
+                    github: "https://github.com/TheSquawkyRaven/TTSSquawk-Web-JS-CS"
+                },
                 content: {
                     text:
                         `Made using, HTML, JavaScript, CSS and C#."
@@ -342,16 +274,10 @@ const project_data = [
                 title: "Squawker",
                 subtitle: "Squawk",
                 tags: ["Unity", "CS", "HTML", "JS", "CSS"],
-                links: [
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=_Gp9jB1_URU"
-                    },
-                    {
-                        icon: "images/logos/github.png",
-                        href: "https://github.com/TheSquawkyRaven/Squawker-Web-JS-Unity"
-                    }
-                ],
+                links: {
+                    youtube: "https://www.youtube.com/watch?v=_Gp9jB1_URU",
+                    github: "https://github.com/TheSquawkyRaven/Squawker-Web-JS-Unity"
+                },
                 content: {
                     text:
                         `Made using HTML, JavaScript and Unity Engine.
@@ -379,16 +305,10 @@ const project_data = [
                 title: "Winds of the Past",
                 subtitle: "Tick Tock Tack",
                 tags: ["Unity", "CS"],
-                links: [
-                    {
-                        icon: "images/logos/itch.io.png",
-                        href: "https://thesquawkyraven.itch.io/winds-of-the-past"
-                    },
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=glmBgMb-dkc"
-                    }
-                ],
+                links: {
+                    itch: "https://thesquawkyraven.itch.io/winds-of-the-past",
+                    youtube: "https://www.youtube.com/watch?v=glmBgMb-dkc"
+                },
                 content: {
                     text:
                         `Made in 7 days for the Brackeys Game Jam 2020.2, using Unity Engine."
@@ -409,16 +329,10 @@ const project_data = [
                 title: "Spooky Babysitter",
                 subtitle: "Suicidal Babies",
                 tags: ["Unity", "CS"],
-                links: [
-                    {
-                        icon: "images/logos/itch.io.png",
-                        href: "https://thesquawkyraven.itch.io/the-babysitter"
-                    },
-                    {
-                        icon: "images/logos/youtube.png",
-                        href: "https://www.youtube.com/watch?v=de7r7Y-F7O8"
-                    }
-                ],
+                links: {
+                    itch: "https://thesquawkyraven.itch.io/the-babysitter",
+                    youtube: "https://www.youtube.com/watch?v=de7r7Y-F7O8"
+                },
                 content: {
                     text:
                         `Made in 48 hours with a friend in MMU for the GMTK Game Jam 2020, using Unity Engine.

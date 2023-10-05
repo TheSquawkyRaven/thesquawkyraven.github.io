@@ -1,4 +1,8 @@
 
+const itch_img = "images/logos/itch.io.png"
+const youtube_img = "images/logos/youtube.png"
+const github_img = "images/logos/github.png"
+
 const projectContainer = document.querySelector("#project-container")
 
 const projectTimelineTemplate = document.querySelector("#project-timeline-template > .project-timeline")
@@ -72,9 +76,9 @@ function createProject(parentNode, project) {
     let links = project.links
     if (links) {
         let projectLinksNode = projectNode.querySelector(".project-links")
-        links.forEach((link) => {
-            createProjectLink(projectLinksNode, link)
-        })
+        for (let key in links) {
+            createProjectLink(projectLinksNode, key, links[key])
+        }
     }
 
     let collapsibleNode = projectNode.querySelector(".collapsible")
@@ -93,17 +97,29 @@ function createProject(parentNode, project) {
 }
 
 // Project subtitle links
-function createProjectLink(parentNode, link) {
-    let icon = link.icon
+function createProjectLink(parentNode, type, link) {
     // Redirect svg icon
-    if (icon == "redirect") {
+    if (type == "redirect") {
         createProjectRedirectLink(parentNode, link)
         return
     }
 
     let linkNode = projectLinkTemplate.cloneNode(deep = true)
-    let href = link.href
+    let href = link
     linkNode.href = href
+
+    let icon = ""
+    switch (type) {
+        case "itch":
+            icon = itch_img
+            break
+        case "youtube":
+            icon = youtube_img
+            break
+        case "github":
+            icon = github_img
+            break
+    }
 
     let iconNode = linkNode.querySelector(".project-link-icon")
     iconNode.src = icon
@@ -114,7 +130,7 @@ function createProjectLink(parentNode, link) {
 function createProjectRedirectLink(parentNode, link) {
     let redirectNode = projectLinkRedirectTemplate.cloneNode(deep = true)
 
-    let href = link.href
+    let href = "#"
     redirectNode.href = href
 
     let options = link.options
