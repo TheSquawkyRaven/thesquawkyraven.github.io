@@ -3,6 +3,30 @@ const project_data = [
     {
         timeline: "2023",
         projects: [
+            // Google Flight Optimizer
+            {
+                id: "google-flight-optimizer-2023",
+                icon: "images/google_flight_optimizer.png",
+                title: "Google Flight Optimizer",
+                subtitle: "Cheapest flights",
+                tags: ["TailwindCSS", "HTML", "JS"],
+                links: {
+                    youtube: "https://www.youtube.com/watch?v=yf32XMAUmQE",
+                    github: "https://github.com/TheSquawkyRaven/Google-Flights-Optimizer-Web-JS"
+                },
+                content: {
+                    text:
+                        `Made using Tailwind, HTML and JavaScript"
+                        This is a browser extension that scrapes Google Flights based on required parameters - how many days to consider after this selected day and maximum flight stops.
+                        The reason I made this is because the price listing on the flight is not the actual minimum price possible to book. Several services/websites provide different prices for different flights. Thus to manually go through them to find the ultimate cheapest flight ticket, you have click and record a lot of data.
+                        Probably one of the most challenging site to scrape, the program has to wait until the flights are fully loaded (with every recommended flight properly set, "best flights" being built etc). There is also a chance Google will show an invalid itinerary, which will lead to a missing page, and the program has to skip that flight.
+                        The data retrieved is converted into CSV, which can be chose to be flattened (which flattens the price listing, to generate a row for each price instead all clumped together). After that, the CSV can be pasted into Google Sheets, split the CSV, and sorted by the cheapest flight tickets. It makes it easier to decide that, even if you don't want the cheapest ticket because you don't like that departure time, or the airline, then you can just look at the next row to see the next cheapest tickets.
+                        The video demo is as below. The video scrapes a round trip itinerary from Kuala Lumpur to Tokyo, Oct 29th - Nov 5th (8 day trip), for 3 days (Oct 29th - Nov 5th, Oct 30th - Nov 6th, Oct 31st - Nov 7th) and with a maximum of 1 stops.`,
+                    links: {
+                        youtube: "https://www.youtube.com/embed/yf32XMAUmQE?si=GYFKHQPEd_GTjciy"
+                    }
+                }
+            },
             // Personal Portfolio Website
             {
                 id: "website-2023",
@@ -18,11 +42,12 @@ const project_data = [
                 },
                 content: {
                     text:
-                        `You're looking at it. Made with Tailwind CSS."`,
+                        `You're looking at it. Made with Tailwind CSS.`
                 }
             },
             // Billy The Worm Bait
             {
+                id: "billy-the-worm-bait-2023",
                 icon: "images/billy_the_worm_bait.png",
                 title: "Billy The Worm Bait",
                 subtitle: "\"Fishing\" Game",
@@ -203,7 +228,7 @@ const project_data = [
                 },
                 content: {
                     text:
-                        `Made with a friend in MMU with GDevelop."
+                        `Made with a friend in MMU with GDevelop.
                         This game is a turn-based puzzle game, in which you can place traps to help you get back to where the protagonist lost their sword.
                         Try it now on your browser for free! (PC only)`,
                     links: {
@@ -258,7 +283,7 @@ const project_data = [
                 },
                 content: {
                     text:
-                        `Made using, HTML, JavaScript, CSS and C#."
+                        `Made using HTML, JavaScript, CSS and C#.
                         This is a Google Meet extension that reads the chat, and a server that generates text-to-speech audio. The chat will be converted into Text-to-Speech audio and played based on configurations.
                         Using the VB-Cable, which connects an audio output deivce to a audio input device, and using the audio output of the extension with the dropdown along with whitelisting yourself, it can simulate a text to speech program of whatever you type on the chat into the microphone and sent through Google Meet.
                         The video demo is as below.`,
@@ -311,7 +336,7 @@ const project_data = [
                 },
                 content: {
                     text:
-                        `Made in 7 days for the Brackeys Game Jam 2020.2, using Unity Engine."
+                        `Made in 7 days for the Brackeys Game Jam 2020.2, using Unity Engine.
                         This game is a puzzle game, and has increasingly harder puzzles while playing with the clock hand's mechanics. Make it turn clockwise or anti-clockwise to reach the objective!
                         Try it now on your browser for free! (PC only)`,
                     links: {
