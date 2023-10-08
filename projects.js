@@ -204,6 +204,7 @@ function createProjectContentLinkItch(parentNode, itch) {
     itchNode.classList.add("project-content-itch")
     itchNode.classList.add("w-full")
     itchNode.classList.add("md:w-[680px]")
+    itchNode.classList.add("select-none")
     itchNode.removeAttribute("width")
     itchNode.height = 180
 
