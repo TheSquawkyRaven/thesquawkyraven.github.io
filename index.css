@@ -19,7 +19,7 @@
 
 .background-container {
     background-image: linear-gradient(to bottom right, rgb(46 16 101 / .80), rgb(30 27 75 / .80), rgb(59 7 100 / .80), rgb(30 27 75 / .80), rgb(46 16 101 / .80), rgb(30 27 75 / .80), rgb(59 7 100 / .80));
-    animation: bg-scroll 15s ease-in-out infinite;
+    animation: bg-scroll 100s ease-in-out infinite;
     transform-origin: 0% 0%;
     z-index : -1;
 }
@@ -95,7 +95,7 @@
     width: 100%;
     height: 100%;
     top: 0;
-    animation: background-spin 1000s linear infinite;
+    animation: background-spin 5000s linear infinite;
     z-index: -1;
 
     --scale-x: 1;

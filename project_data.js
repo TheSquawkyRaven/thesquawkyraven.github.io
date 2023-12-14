@@ -3,6 +3,48 @@ const project_data = [
     {
         timeline: "2023",
         projects: [
+            // Perch Engine
+            {
+                id: "perch-engine-2023",
+                icon: "images/perch_engine.png",
+                title: "Perch Engine",
+                subtitle: "My own game engine",
+                tags: ["Cpp", "PerchEngine"],
+                links: {
+                    github: "https://github.com/TheSquawkyRaven/PerchEngine-Cpp"
+                },
+                content: {
+                    text:
+                        `Made using C++, with SDL2's features as well as custom implementation of my own systems.
+                        This is a game engine that I made for fun. It's a work in progress, and I am still learning how to make a game engine.
+                        The engine uses a node based system known as branches, inspired by Godot's node system, where each branch holds one component and an optional script. Each branch can have children of other branches, which can be used to create a hierarchy of objects, while respecting the parents' transform and drawing order.
+                        The drawing system is inspired by both Unity Engine and Godot. The drawing is first based on a drawing layer, which can separate gameplay and UI similar to Unity's, and then based on a drawing order, which can be used to draw objects in front of or behind other objects with relativity options similar to Godot's. Furthermore, the objects with the same layer and order will respect the tree hierarchy by drawing in a preorder tree traversal manner.
+                        Although the engine does not have an interface, the creation of branches are based on Unreal Engine's C++ blueprinting method, where scripts can be attached to a parent branch, and managing child branches. The scripts are written in C++, and can be attached to a branch to be executed every frame for custom behaviours.
+                        The features that I have implemented using SDL2 so far are: 2D Rendering, Texture Importing, Audio and Input.
+                        The features that I have implemented myself so far are: Object lifecycle, Collision detection, Drawing order and several commonly used components like Sprites, Text and Buttons.`,
+                }
+            },
+            // Flappy Birb
+            {
+                id: "flappy-birb-2023",
+                icon: "images/flappy_birb.png",
+                title: "Flappy Birb",
+                subtitle: "Proof of functionality for Perch Engine",
+                tags: ["Cpp", "PerchEngine"],
+                links: {
+                    youtube: "https://www.youtube.com/watch?v=Oue_IEiltFw",
+                    github: "https://github.com/TheSquawkyRaven/FlappyBirb-PerchEngine-Cpp"
+                },
+                content: {
+                    text:
+                        `Made using C++ and Perch Engine. This is a proof of functionality for Perch Engine, as well as a sample project for anyone attempting to use Perch Engine.
+                        This is a Flappy Bird clone, with a few differences. The bird is a birb, and the pipes are cats.
+                        This is made entirely on Perch Engine.`,
+                    links: {
+                        youtube: "https://www.youtube.com/embed/Oue_IEiltFw?si=-TaG8ncWzTprq5MU"
+                    }
+                }
+            },
             // Google Flight Optimizer
             {
                 id: "google-flight-optimizer-2023",

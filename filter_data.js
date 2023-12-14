@@ -11,9 +11,17 @@ const filter_data = {
         name: "CSS",
         icon: "images/logos/css.png"
     },
+    Cpp: {
+        name: "C++",
+        icon: "images/logos/cpp.png"
+    },
     CS: {
         name: "C#",
         icon: "images/logos/cs.png"
+    },
+    PerchEngine: {
+        name: "Perch Engine",
+        icon: "images/logos/perch_engine.png"
     },
     Unity: {
         name: "Unity",
