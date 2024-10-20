@@ -27,6 +27,10 @@ const filter_data = {
     //     name: "Unreal Engine 4",
     //     icon: "images/logos/unreal_engine.png"
     // },
+    Godot: {
+        name: "Godot Engine",
+        icon: "images/logos/godot.png"
+    },
     GDevelop: {
         name: "GDevelop",
         icon: "images/logos/gdevelop.png"

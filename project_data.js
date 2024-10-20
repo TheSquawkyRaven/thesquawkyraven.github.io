@@ -1,4 +1,57 @@
 const project_data = [
+    // 2024
+    {
+        timeline: "2024",
+        projects: [
+            // Mouse & Mouse
+            {
+                id: "mouse-n-mouse-2024",
+                icon: "images/mouse_n_mouse.png",
+                title: "Mouse & Mouse",
+                subtitle: "A game about Ironmouse",
+                tags: ["Godot"],
+                links: {
+                    itch: "https://thesquawkyraven.itch.io/mouse-mouse",
+                    youtube: "https://www.youtube.com/watch?v=gHdqQQtshvg&t=15428s"
+                },
+                content: {
+                    text:
+                        `Made in 1 month for the Mouse Jam 2025 by the Vtuber Ironmouse, using Godot Engine.
+                        Mouse & Mouse is a platformer game where you control both Ironmouse and a mouse.
+                        Try it now on your browser for free! (PC only)`,
+                    links: {
+                        itch: {
+                            iframe: `<iframe frameborder="0" src="https://itch.io/embed/2941633?bg_color=230537&amp;fg_color=ecb1fb&amp;link_color=f43aa2&amp;border_color=624b7f" width="552" height="167"><a href="https://thesquawkyraven.itch.io/mouse-mouse">Mouse &amp; Mouse by TheSquawkyRaven</a></iframe>`
+                        },
+                        youtube: "https://www.youtube-nocookie.com/embed/gHdqQQtshvg?si=9xtPnJykGIGOBs87&amp;start=15428"
+                    }
+                }
+            },
+            // A Doctor's Rent
+            {
+                id: "a-doctors-rent-2024",
+                icon: "images/a_doctors_rent.png",
+                title: "A Doctor's Rent",
+                subtitle: "A Physics Simulation Horror Game",
+                tags: ["Godot"],
+                links: {
+                    itch: "https://thesquawkyraven.itch.io/adoctorsrent",
+                },
+                content: {
+                    text:
+                        `Made in 2 weeks for the Pirate Software Game Jam 15, using Godot Engine.
+                        A Doctor's Rent is a simulation game where you create cures using multiple ingredients, then apply to the patients.
+                        And sometimes, turn them into monsters that cause havoc, so more patients will come!
+                        Try it now on your browser for free! (PC only)`,
+                    links: {
+                        itch: {
+                            iframe: `<iframe frameborder="0" src="https://itch.io/embed/2843254?bg_color=ecebe7&amp;fg_color=211f1f&amp;link_color=881010&amp;border_color=ecebe7" width="552" height="167"><a href="https://thesquawkyraven.itch.io/adoctorsrent">A Doctor's Rent by TheSquawkyRaven</a></iframe>`
+                        }
+                    }
+                }
+            }
+        ]
+    },
     // 2023
     {
         timeline: "2023",
