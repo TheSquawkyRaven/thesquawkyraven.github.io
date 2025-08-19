@@ -1,4 +1,55 @@
 const project_data = [
+    // 2025
+    {
+        timeline: "2025",
+        projects: [
+            // Icon Packs
+            {
+                id: "icon-packs-2025",
+                icon: "images/icon_packs.png",
+                title: "Icon Packs",
+                subtitle: "Various icon packs sold on Itch.io",
+                tags: [],
+                links: {
+                    itch: "https://itch.io/s/156455/fantasy-pixel-art-icons-bundle"
+                },
+                content: {
+                    text:
+                        `I made some icon packs that are sold on Itch.io
+                        It ain't much but it's honest work.
+                        Right?`,
+                    links: {
+                        itch: {
+                            iframe: `<iframe frameborder="0" src="https://itch.io/embed/3682290?bg_color=100c16&amp;fg_color=fdd2ed&amp;link_color=c06eee&amp;border_color=44404a" width="552" height="167"><a href="https://thesquawkyraven.itch.io/fantasy-armor-accessories-icons">Fantasy Pixel Art Armor &amp; Accessories Icons by TheSquawkyRaven</a></iframe>`
+                        }
+                    }
+                }
+            },
+            // Press Start (or you can't?)
+            {
+                id: "press-start-2025",
+                icon: "images/press_start.png",
+                title: "Press Start (or you can't?)",
+                subtitle: "A 4th Wall Breaking Game",
+                tags: ["Godot"],
+                links: {
+                    itch: "https://thesquawkyraven.itch.io/press-start-or-you-cant"
+                },
+                content: {
+                    text:
+                        `Made in a week for the Inbound Shovel Game Jam, using Godot Engine.
+                        Press the start button! Oh wait, your cat just smacked it away... and ruining your game...
+                        Satisfy your cat until he gives up! So you can actally play the goddamn game.
+                        Try it now on your browser for free! (PC only)`,
+                    links: {
+                        itch: {
+                            iframe: `<iframe frameborder="0" src="https://itch.io/embed/3714048?bg_color=2e222f&amp;fg_color=ffffff&amp;link_color=f79617&amp;border_color=403c46" width="552" height="167"><a href="https://thesquawkyraven.itch.io/press-start-or-you-cant">Press Start (or you can't?) by TheSquawkyRaven</a></iframe>`
+                        }
+                    }
+                }
+            }
+        ]
+    },
     // 2024
     {
         timeline: "2024",
